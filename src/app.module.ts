@@ -9,6 +9,7 @@ import { RedisOptionsProvider } from './config/redis/redis-options.provider';
 
 @Module({
   imports: [
+    AppConfigModule,
     MongooseModule.forRootAsync({
       imports: [AppConfigModule],
       useClass: MongodbConfigService,
